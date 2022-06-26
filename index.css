@@ -68,7 +68,7 @@ header {
   border: none;
   color: white;
   margin-top: 20px;
-  cursor: pointer;
+  
 }
 .a3 {
   padding-left: 25px;
@@ -87,7 +87,7 @@ main {
 .b2 {
   margin-bottom: 20px;
   margin-top: 20px;
-  padding: 10px 50px;
+  padding: 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,7 +105,7 @@ p {
 .c {
   background-color: white;
   box-shadow: 0 0 2px 1px rgb(241, 238, 238);
-  margin: 50px auto -50px auto;
+  margin: 50px auto -80px auto;
   text-align: center;
   padding: 50px 150px;
   border-radius: 5px;
@@ -123,7 +123,6 @@ p {
   color: white;
   box-shadow: 0 0 3px rgb(117, 116, 116);
   border: none;
-  cursor: pointer;
   animation-name: myanime;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -131,22 +130,26 @@ p {
 .a2 button:focus,
 .c button:focus {
   opacity: 0.5;
+  cursor: pointer;
 }
 footer {
   background-color: hsl(192, 100%, 9%);
   color: white;
+  padding-top: 50px;
+  padding-bottom: 30px;
   width: 100%;
   z-index: -1;
 }
 footer #img1 {
   width: 20%;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 footer p {
   color: rgb(255, 255, 255);
   display: inline;
-  padding: 0;
   margin-bottom: 15px;
+  padding: 0;
 }
 footer a {
   text-decoration: none;
@@ -160,6 +163,7 @@ li {
   padding-top: 10px;
 }
 .d2 {
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 10px 300px;
 }
@@ -167,6 +171,7 @@ li {
   display: inline-block;
   vertical-align: top;
   padding-left: 10px;
+  margin-top: -6px;
 }
 .d1 {
   display: flex;
@@ -186,19 +191,18 @@ span {
   display: block;
   font-size: 12px;
   text-align: right;
-  margin-top: 10px;
+  padding-right: 20px;
 }
 @keyframes myanime {
   50% {
     background-color: white;
     color: hsl(322, 100%, 66%);
-    border: 1px solid hsl(322, 100%, 66%);
-    margin-bottom: 10px;
+    transition: 1s;
+
   }
   100% {
     background-color: hsl(322, 100%, 66%);
     color: white;
-    margin-bottom: 20px;
   }
 }
 @keyframes myanime2 {
