@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/8d2b9cd8f4.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -38,7 +39,7 @@
       </div>
     </header>
     <main>
-      <div class="b">
+      <div class="b" data-aos="fade-left" data-aos-duration="1000">
         <div class="b2">
           <div>
             <h1>Grow Together</h1>
@@ -53,7 +54,7 @@
           </div>
         </div>
 
-        <div class="b2">
+        <div class="b2" data-aos="fade-right" data-aos-duration="1000">
           <div class="image">
             <img
               src="icons/illustration-flowing-conversation.svg"
@@ -69,7 +70,7 @@
             </p>
           </div>
         </div>
-        <div class="b2">
+        <div class="b2" data-aos="fade-left" data-aos-duration="1000">
           <div>
             <h1>Your Users</h1>
             <p>
@@ -83,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div class="c">
+      <div class="c" data-aos="fade-down" data-aos-duration="1000">
         <h1>Ready to build your Community?</h1>
         <button>Get Started For Free</button>
       </div>
@@ -95,9 +96,9 @@
           <div class="d2">
             <img src="icons/icon-location.svg" alt="location" />
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusantium labore voluptatibus aliquid blanditiis praesentium
-              accusamus, modi ipsum necessitatibus dignissimos debitis.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi alias saepe sit quos corporis neque
+              explicabo quod praesentium sequi.
             </p>
 
             <img src="icons/icon-phone.svg" alt="phone" />
@@ -118,13 +119,17 @@
           </ul>
 
           <div id="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
+            <i id="facebook" class="fa fa-facebook"></i>
+            <i id="twitter" class="fa fa-twitter"></i>
+            <i id="insta" class="fa fa-instagram"></i>
           </div>
         </div>
       </div>
-      <span>Copywrite 2018 Huddle. All rights reserved</span>
+      <span><i style="font-size: 10px; padding: 3px;" class="fa fa-copyright"></i>Copywrite 2018 Huddle. All rights reserved</span>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
